@@ -1,0 +1,25 @@
+{
+  "name": "itcup-landingpage",
+  "version": "1.0.0",
+  "description": "Static landingpage for B;W IT Cup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realDogbert/itcup-landingpage.git"
+  },
+  "author": "Frank von Eitzen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realDogbert/itcup-landingpage/issues"
+  },
+  "homepage": "https://github.com/realDogbert/itcup-landingpage#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "grunt": "^1.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
