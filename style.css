@@ -1,0 +1,75 @@
+body {
+    height: 100%;
+  
+    /* The image used */
+    background-image: url("img/background.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+a:link { color: white; }
+a:visited { color: white; }
+hr {
+    margin: auto;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-color: white;
+}
+
+
+.caption {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    padding: 25px;
+    
+    background: rgba(54, 57, 50, 0.63);
+    border-radius: 20px;
+}
+
+.caption .line1 {
+    height: 64px;
+    font-size: 70px;
+}
+
+.caption .line2 {
+    height: 50px;
+    font-size: 60px;
+}
+
+.caption .line3 {
+    height: 125px;
+    font-size: 100px;
+}
+
+.caption .date {
+    padding-top: 40px;
+    font-size: 55px;
+}
+
+
+
+.impressum {
+
+    font-family: 'Roboto', sans-serif;
+
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    color: #A4A4A4;
+}
+
+.impressum a:link { color: #A4A4A4; }
+.impressum a:visited { color: #A4A4A4; }
