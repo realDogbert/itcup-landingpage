@@ -1,75 +1,185 @@
-body {
-    height: 100%;
-  
-    /* The image used */
-    background-image: url("img/background.jpg");
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+﻿html, body {
+	height: 100%;
+	width: 100%;
+}
+
+p {
+	font-size: 1.2em;
+	color:#757575;
+}
+
+label {
+	font-size: 1.5em;
+}
+strong {
+	color: black;
+}
+
+.form-input {
+	font-size: 1.2em;
+}
+
+#home {
+	background: url(img/background.jpg) no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+	display: table;
+	height: 100%;
+	width: 100%
+}
+
+.landing-text {
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+    padding-left: 5%;
+    padding-top: 130px;
+}
+
+.landing-text h1 {
+	font-size: 5em;
+	margin-bottom: 0;
+	color: #CCD3D9;
+}
+
+.landing-text h3 {
+	margin-top: 0;
+	color: gray;
+	font-size: 3em;	
+}
+
+.landing-text .actions {
+	margin-top: 25px;
+}
+
+.padding {
+	padding: 80px 0;
+}
+
+.padding img {
+	width: 100%;
+}
+
+#fixed {
+	background: url(img/background.jpg) no-repeat center center fixed;
+	position: relative;
+	display: table;
+	height: 60%;
+	width: 100%;
+	background-size: cover;
+}
+
+footer {
+	width: 100%;
+	background-color: #1C260D;
+	padding: 5% 5% 10% 5%;
+	color: #CCD3D9;
+}
+
+.credits a {
+	color: rgb(146, 170, 52);
+}
+
+
+.icon {
+	margin-top: 20px;
+}
+
+
+#map {
+	height: 400px;
+
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  }
+
+
+@media (max-width: 768px) {
+	
+	.landing-text h1 {
+		font-size: 300%;
+	}
+
+	.landing-text h3 {
+		font-size: 200%;
+	}
+
+	.fa {
+		font-size: 20px;
+		padding: 10px;
+	}
 
 }
 
-a:link { color: white; }
-a:visited { color: white; }
-hr {
-    margin: auto;
-    border-top-width: 10px;
-    border-top-style: solid;
-    border-color: white;
+/*--- iOS Landing Page Fix
+section {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 100%;
+ 	display: table;
 }
-
-
-.caption {
-    position: absolute;
-    right: 15%;
-    top: 10%;
-    text-align: center;
-
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    padding: 25px;
-    
-    background: rgba(54, 57, 50, 0.63);
-    border-radius: 20px;
+.home-wrap {
+ 	clip: rect(0, auto, auto, 0);
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
 }
-
-.caption .line1 {
-    height: 64px;
-    font-size: 70px;
+#home {
+	background-image: url('img/mountains.jpeg');
+ 	position: fixed;
+ 	display: table;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
+	z-index: -1;
 }
-
-.caption .line2 {
-    height: 50px;
-    font-size: 60px;
+.landing-text {
+	z-index: 100;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
 }
+--*/
 
-.caption .line3 {
-    height: 125px;
-    font-size: 100px;
+/*--- iOS Fixed Image Fix
+figure {
+	position: relative;
+	width: 100%;
+	height: 60%;
 }
-
-.caption .date {
-    padding-top: 40px;
-    font-size: 55px;
+.fixed-wrap {
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
-
-
-
-.impressum {
-
-    font-family: 'Roboto', sans-serif;
-
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    text-align: center;
-    color: #A4A4A4;
+#fixed {
+	background-image: url('img/background.jpg');
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform: translateZ(0);
+          transform: translateZ(0);
+	will-change: transform;
 }
+--*/
 
-.impressum a:link { color: #A4A4A4; }
-.impressum a:visited { color: #A4A4A4; }

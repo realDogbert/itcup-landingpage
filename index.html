@@ -1,25 +1,213 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>BMW Mitarbeiter IT-Cup</title>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link href="style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
-    </head>
-    <body>
+<head>
+  <title>BMW Mitarbeiter IT-Cup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
 
-        <div class="caption">
+<body>
 
-            <hr>
-            <div class="line1">20. BMW</div>
-            <div class="line2">Mitarbeiter</div>
-            <div class="line3">IT Cup</div>
-            <hr>
+  <div id="home">
+    <div class="landing-text">
 
-            <div class="date">21.09.2019</div>
+      <h1>20. BMW Mitarbeiter IT-Cup</h1>
+      <h3>21.09.2019, Golfplatz Ebersberg</h3>
+
+      <div class="actions">
+          <a href="#anmeldung" role="button" class="btn btn-primary btn-lg">Anmeldung</a>
+          <a href="#info" role="button" class="btn btn-success btn-lg">Informationen</a>
+          <a href="#anfahrt" role="button" class="btn btn-success btn-lg">Anfahrt</a>  
+      </div>
+
+    </div>
+  </div>
+
+  <div class="padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="img/birdie.png" alt="" class="icon">
+        </div>
+        <div class="col-sm-8">
+
+            <a name="anmeldung"></a>
+
+            <h2>Anmeldung</h2>
+
+            <p>
+              Hiermit melde ich mich zur Teilnahme am 20. BMW IT-Cup an.<br>
+              Den Unkostenbeitrag von 75,- € (inkl. Turnierbeitrag, Halfway und Preise) überweise ich bis zum 20.09.2019 auf das in der 
+              Anmeldebestätigung angegebene Konto. 
+            </p>
+
+            <form>
+                <div class="form-group">
+                    <label for="firstname">Vorname</label>
+                    <input type="text" class="form-control form-input" id="firstname" placeholder="Vorname">
+                  </div>
+                  <div class="form-group">
+                      <label for="lastname">Nachname</label>
+                      <input type="text" class="form-control form-input" id="lastname" placeholder="Nachname">
+                    </div>
+                <div class="form-group">
+                  <label for="email">BMW Email-Adresse*</label>
+                  <input type="email" class="form-control form-input" id="email" aria-describedby="emailHelp" placeholder="Max.Muster@bmw.de oder Max.Muster@partner.bmw.de">
+                  <small id="emailHelp" class="form-text text-muted">*Bitte nur eine gültige BMW oder BMW Partner Email-Adresse angeben.</small>
+                </div>
+
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input form-input" id="exampleCheck1">
+                  Ich erkläre mich damit einverstanden, dass meine Daten ausschließlich zur Organisation und Durchführung des BMW IT-Cup in elektronischer Form gespeichert und verarbeitet werden.
+                </div>
+                <button type="submit" class="btn btn-primary">Anmeldung abschicken</button>
+              </form>
 
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="impressum">&copy; Frank von Eitzen 2019 - <a href="mailto:Frank.von-Eitzen@bmw.de">Kontakt</a></div>
 
-    </body>
+  <a name="info"></a>
+
+  <div class="padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+          <h2>Turnier Informationen</h2>
+
+          <p>
+            <strong>Start: </strong><br>21.09.2019, 10:00<br>
+            <strong>Spielmodus: </strong><br>Einzel, Stableford, vorgabewirksam<br>
+            <strong>Abschlag: </strong><br>Herren (gelb) und Damen (rot)<br>
+          </p>
+          <p>
+            <strong>Startgebühr: </strong><br>70€ (Greenfee, Turnierbeitrag und Halfway)<br>
+            <strong>Sonstige Kosten: </strong><br>Preise = 5 €<br>
+          </p>
+
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+          <img src="./img/golf-bag.png" alt="Sass" class="icon img-responsive">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+          <h2>Austragungsort</h2>
+
+          <p>
+            <strong>
+              <a href="https://www.gc-ebersberg.de/">Golf-Club Ebersberg e.V.</a><br> 
+            </strong>
+            <a href="https://www.gc-ebersberg.de/18-loch-platz/allgemeines">18-Loch Meisterschaftsplatz</a>
+          </p>
+
+          <p>
+              Zaißing 6
+              <br>85643 Steinhöring
+          </p>
+          
+          <a href="#anfahrt" role="button" class="btn btn-success">Anfahrt</a>     
+          
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+            <img src="./img/logo_ebersberg.jpg" class="icon img-responsive">
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fixed"></div>
+
+  <div class="padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+
+            <a name="anfahrt"></a>
+
+            <div id="map"></div>
+            <script>
+              var map;
+              function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: -34.397, lng: 150.644},
+                  zoom: 8
+                });
+              }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"
+            async defer></script>
+
+
+          </div>
+        <div class="col-sm-6">
+
+          <h3>Anfahrt</h3>
+
+          <h4>Über B 304 München/Wasserburg:</h4>
+          <ul>
+          <li>In Steinhöring am östlichen Ortsrand links nach Abersdorf abbiegen.</li>
+          <li>In Abersdorf links (Beschilderung "Golfplätze" folgen)</li>
+          <li>über Meiletskirchen nach Zaißing.</li>
+          </ul>
+
+          <h4>Über A 94 (Riemer Autobahn) und B12:</h4>
+          <ul>
+            <li>Über die A 94 (München-Passau) und B12 in Richtung Passau bis hinter Hohenlinden
+                (Achtung: ab Autobahnende Radarkontrollen!).</li>
+            <li> Nach dem Ortsteil Birkach biegen Sie der Beschilderung "Golfplätze" folgend rechts ab in Richtung Steinhöring</li>
+            <li>In Abersdorf rechts nach Meiletskirchen</li>
+            <li>Von dort nach Zaißing.</li>
+          </ul> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-left">
+    <div class="row">
+      <div class="col-sm-4">
+
+        <h3>Kontakt</h3>
+        
+        <div>
+            Frank von Eitzen<br>
+            EMail: Frank.von-Eitzen@bmw.de <br>
+            Tel.: +49 151 60152978
+        </div>
+        
+      
+      </div>
+      <div class="col-sm-4">
+        
+      </div>
+      <div class="col-sm-4">
+
+        <h3>Credits</h3>
+
+        <div class="credits">
+          Icons made by 
+          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and 
+          <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
+          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>,
+          licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>  
+
+        <div class="credits">
+          Photo by 
+          <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@will0629?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Will Porada"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Will Porada</span></a>
+          on <a href="https://www.unsplash.com">Unsplash</a>
+        </div>
+        
+      </div>
+  </div>
+  </footer>
+
+
+</body>
 </html>
