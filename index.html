@@ -20,7 +20,6 @@
       <div class="actions">
           <a href="#anmeldung" role="button" class="btn btn-primary btn-lg">Anmeldung</a>
           <a href="#info" role="button" class="btn btn-success btn-lg">Informationen</a>
-          <a href="#anfahrt" role="button" class="btn btn-success btn-lg">Anfahrt</a>  
       </div>
 
     </div>
@@ -60,8 +59,10 @@
                 </div>
 
                 <div class="form-group form-check">
+                  <p>
                   <input type="checkbox" class="form-check-input form-input" id="exampleCheck1">
                   Ich erkläre mich damit einverstanden, dass meine Daten ausschließlich zur Organisation und Durchführung des BMW IT-Cup in elektronischer Form gespeichert und verarbeitet werden.
+                </p>
                 </div>
                 <button type="submit" class="btn btn-primary">Anmeldung abschicken</button>
               </form>
@@ -109,7 +110,7 @@
               <br>85643 Steinhöring
           </p>
           
-          <a href="#anfahrt" role="button" class="btn btn-success">Anfahrt</a>     
+          <a href="https://www.gc-ebersberg.de/anfahrt" role="button" class="btn btn-success">Anfahrt</a>     
           
         </div>
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
@@ -122,52 +123,6 @@
 
   <div id="fixed"></div>
 
-  <div class="padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-
-            <a name="anfahrt"></a>
-
-            <div id="map"></div>
-            <script>
-              var map;
-              function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                  center: {lat: -34.397, lng: 150.644},
-                  zoom: 8
-                });
-              }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"
-            async defer></script>
-
-
-          </div>
-        <div class="col-sm-6">
-
-          <h3>Anfahrt</h3>
-
-          <h4>Über B 304 München/Wasserburg:</h4>
-          <ul>
-          <li>In Steinhöring am östlichen Ortsrand links nach Abersdorf abbiegen.</li>
-          <li>In Abersdorf links (Beschilderung "Golfplätze" folgen)</li>
-          <li>über Meiletskirchen nach Zaißing.</li>
-          </ul>
-
-          <h4>Über A 94 (Riemer Autobahn) und B12:</h4>
-          <ul>
-            <li>Über die A 94 (München-Passau) und B12 in Richtung Passau bis hinter Hohenlinden
-                (Achtung: ab Autobahnende Radarkontrollen!).</li>
-            <li> Nach dem Ortsteil Birkach biegen Sie der Beschilderung "Golfplätze" folgend rechts ab in Richtung Steinhöring</li>
-            <li>In Abersdorf rechts nach Meiletskirchen</li>
-            <li>Von dort nach Zaißing.</li>
-          </ul> 
-
-        </div>
-      </div>
-    </div>
-  </div>
 
   <footer class="container-fluid text-left">
     <div class="row">
