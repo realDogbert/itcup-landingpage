@@ -20,7 +20,7 @@ strong {
 }
 
 #home {
-	background: url(background.jpg) no-repeat center center fixed;
+	background: url(img/background.jpg) no-repeat center center fixed;
 	background-size: cover;
 	position: relative;
 	display: table;
@@ -61,7 +61,7 @@ strong {
 }
 
 #fixed {
-	background: url(background.jpg) no-repeat center center fixed;
+	background: url(img/background.jpg) no-repeat center center fixed;
 	position: relative;
 	display: table;
 	height: 60%;
