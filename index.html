@@ -45,7 +45,7 @@
             </p>
 
             
-            <form action="http://prod.6fjamxhurm.eu-central-1.elasticbeanstalk.com/v1/users/" method="post" enctype="application/x-www-form-urlencoded">
+            <form id="registration" action="" method="post" enctype="application/x-www-form-urlencoded">
                 <div class="form-group">
                     <label for="firstname">Vorname</label>
                     <input type="text" name="firstname" class="form-control form-input" id="firstname" placeholder="Vorname">
@@ -62,12 +62,16 @@
 
                 <div class="form-group form-check">
                   <p>
-                  <input type="checkbox" name="agreement" class="form-check-input form-input" id="exampleCheck1">
+                  <input type="checkbox" name="agreement" class="form-check-input form-input" id="agreement">
                   Ich erkläre mich damit einverstanden, dass meine Daten ausschließlich zur Organisation und Durchführung des BMW IT-Cup in elektronischer Form gespeichert und verarbeitet werden.
                 </p>
                 </div>
-                <button type="submit" class="btn btn-primary">Anmeldung abschicken</button>
+                <button id="submitRegistration" type="submit" class="btn btn-primary">
+                  Anmeldung abschicken
+                </button>
               </form>
+
+              <div id="response"></div>
 
         </div>
       </div>
