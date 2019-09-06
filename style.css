@@ -60,6 +60,14 @@ strong {
 	width: 100%;
 }
 
+#response {
+	margin-top: 20px;
+}
+
+.highlight {
+	border-color: red;
+}
+
 #fixed {
 	background: url(img/background.jpg) no-repeat center center fixed;
 	position: relative;
@@ -88,14 +96,14 @@ footer {
 
 #map {
 	height: 400px;
+}
 
-  }
-  /* Optional: Makes the sample page fill the window. */
-  html, body {
+/* Optional: Makes the sample page fill the window. */
+html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-  }
+}
 
 
 @media (max-width: 768px) {

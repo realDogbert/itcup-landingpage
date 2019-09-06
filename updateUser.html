@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMW Mitarbeiter IT-Cup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="./local/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="./local/jquery-3.4.1.min.js"></script>
+    <script src="./local/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
+
+    <script src="bmwitcup_UpdateUser.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="padding">
+
+        <div class="container">
+                <div class="row">
+                        <div class="col-sm-4">
+                                <img src="img/birdie.png" alt="" class="icon">
+                              </div>
+
+                    <div class="col-sm-8">
+    
+    
+                        <h2 id="anrede">Hallo</h2>
+    
+                        <p>
+                            Danke, dass Du Dich für den 20. BMW Mitarbeiter IT-Cup angemeldet hast.
+                            Damit wir die Flights einteilen können, benötigen wir noch den Namen Deines Golfclubs.
+                        </p>
+    
+    
+                        <form id="updateUser">
+
+                            <div class="form-group">
+                                <label for="firstname">Vorname</label>
+                                <input type="text" name="firstname" class="form-control form-input" id="firstname" placeholder="Vorname">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Nachname</label>
+                                <input type="text" name="lastname" class="form-control form-input" id="lastname"
+                                    placeholder="Nachname">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">BMW Email-Adresse*</label>
+                                <input type="email" name="email" class="form-control form-input" id="email"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Max.Muster@bmw.de oder Max.Muster@partner.bmw.de">
+                                <small id="emailHelp" class="form-text text-muted">*Bitte nur eine gültige BMW oder BMW
+                                    Partner Email-Adresse angeben.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="golfclub">Golfclub</label>
+                                <input type="text" name="golfclub" class="form-control form-input" id="golfclub"
+                                    placeholder="Name des Golfclubs">
+                            </div>
+    
+                            <button id="submitUpdate" type="submit" class="btn btn-primary">
+                                Daten aktualisieren
+                            </button>
+                        </form>
+    
+                        <div id="response"></div>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+
+
+
+</body>
+
+</html>
