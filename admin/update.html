@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMW Mitarbeiter IT-Cup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="./local/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="./local/jquery-3.4.1.min.js"></script>
+    <script src="./local/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
+
+    <script src="update.js"></script>
+    <link href="../style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="list.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Details</li>
+        </ol>
+    </nav>
+
+    <div class="container">
+
+
+
+    <form id="updateUser">
+
+        <div class="form-group">
+            <label for="firstName">FirstName</label>
+            <input type="text" class="form-control form-input" id="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">LastName</label>
+            <input type="text" class="form-control form-input" id="lastName">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control form-input" id="email">
+        </div>
+        <div class="form-group">
+            <label for="golfclub">Golfclub</label>
+            <input type="text" class="form-control form-input" id="golfclub">
+        </div>
+        <div class="form-group">
+            <label for="userStatus">Status</label>
+            <input type="text" class="form-control form-input" id="userStatus">
+        </div>
+
+        <div class="form-group">
+            <label for="createdAt">Created</label>
+            <div class="form-input" id="createdAt"></div>
+        </div>
+        <div class="form-group">
+            <label for="updateddAt">Updated</label>
+            <div class="form-input" id="updatedAt"></div>
+        </div>
+
+        <button id="submitChange" type="submit" class="btn btn-primary">
+            Anmeldung abschicken
+        </button>
+        
+    </form>
+
+    <div id="response"></div>
+
+</div>
+
+
+
+</body>
+
+</html>

@@ -12,9 +12,10 @@ $(document).ready(function() {
             .text('Sende Anmeldung');
 
         var data = {
-            firstname: $('#firstname').val(),
-            lastname: $('#lastname').val(),
+            firstName: $('#firstname').val(),
+            lastName: $('#lastname').val(),
             email: $('#email').val(),
+            golfclub: $('#golfclub').val(),
             agreement: $('#agreement').is(':checked')
         }
 
