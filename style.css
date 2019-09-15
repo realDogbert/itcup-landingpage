@@ -68,6 +68,18 @@ strong {
 	border-color: red;
 }
 
+.infobar {
+	padding: 20px 0 40px;
+	color: #757575;
+}
+
+.infobar label {
+	font-weight: initial;
+	font-size: 1.2em;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
 #fixed {
 	background: url(img/background.jpg) no-repeat center center fixed;
 	position: relative;

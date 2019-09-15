@@ -20,6 +20,7 @@ $(document).ready(function() {
         _user.email = $('#email').val();
         _user.golfclub = $('#golfclub').val();
         _user.userStatus = $('#userStatus').val();
+        _user.handicap = Number($('#handicap').val());
         _user.updatedAt = new Date().getTime();
         if (!_user.createdAt) {
             _user.createdAt = new Date().getTime();
@@ -50,6 +51,7 @@ function getUserData(id) {
         $('#email').val(data.email);
         $('#golfclub').val(data.golfclub);
         $('#userStatus').val(data.userStatus);
+        if(data.handicap) $('#handicap').val(data.handicap);
         $('#createdAt').html(new Date(data.createdAt).toLocaleString());
         $('#updatedAt').html(new Date(data.updatedAt).toLocaleString());
     })
@@ -97,6 +99,9 @@ function verifyUser() {
         // valid = false;
         // $('#golfclub').addClass('highlight');
         _user.golfclub = null;
+    };
+    if (_user.handicap == 0) {
+        _user.handicap = null;
     };
     if (_user.firstName.trim().length < 3) {
         valid = false;

@@ -45,34 +45,53 @@
             <label for="email">Email</label>
             <input type="text" class="form-control form-input" id="email">
         </div>
-        <div class="form-group">
-            <label for="golfclub">Golfclub</label>
-            <input type="text" class="form-control form-input" id="golfclub">
-        </div>
-        <div class="form-group">
-            <label for="userStatus">Status</label>
-            <input type="text" class="form-control form-input" id="userStatus">
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="golfclub">Golfclub</label>
+                    <input type="text" class="form-control form-input" id="golfclub">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="handicap">Handicap</label>
+                    <input type="number" class="form-control form-input" id="handicap">
+                </div>
+            </div>
         </div>
 
-        <div class="form-group">
-            <label for="createdAt">Created</label>
-            <div class="form-input" id="createdAt"></div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="userStatus">Status</label>
+                    <input type="text" class="form-control form-input" id="userStatus">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="createdAt">Created</label>
+                    <div class="form-input" id="createdAt"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="updateddAt">Updated</label>
+                    <div class="form-input" id="updatedAt"></div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="updateddAt">Updated</label>
-            <div class="form-input" id="updatedAt"></div>
-        </div>
+
+        
 
         <button id="submitChange" type="submit" class="btn btn-primary">
-            Anmeldung abschicken
+            Update
         </button>
         
     </form>
 
     <div id="response"></div>
-
-</div>
-
 
 
 </body>

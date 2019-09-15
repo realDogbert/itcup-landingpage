@@ -51,6 +51,7 @@ function createUserLine(idx, user) {
     line.append($("<td>").html(user.email));
     line.append($("<td>").html(user.userStatus));
     line.append($("<td>").html(user.golfclub));
+    line.append($("<td>").html(user.handicap));
     line.append($("<td>").html(new Date(user.createdAt).toLocaleDateString()));
     line.append($("<td>").html(new Date(user.updatedAt).toLocaleDateString()));
 
