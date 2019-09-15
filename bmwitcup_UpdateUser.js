@@ -19,7 +19,7 @@ $(document).ready(function() {
         _user.lastName = $('#lastname').val();
         _user.email = $('#email').val();
         _user.golfclub = $('#golfclub').val();
-        _user.handicap = Number($('#handicap').val());
+        _user.handicap = Number($('#handicap').val().replace(/,/, '.'));
         
         _user.updatedAt = new Date().getTime();
         if (!_user.createdAt) {
@@ -51,9 +51,11 @@ function getUserData(id) {
         $('#lastname').val(data.lastName);
         $('#email').val(data.email);
         $('#golfclub').val(data.golfclub);
-        if(data.handicap) $('#handicap').val(data.handicap);
+        if(data.handicap) { 
+            $('#handicap').val(data.handicap) 
+        };
 
-        $('#status').html(data.userStatus);
+        $('#userStatus').html(data.userStatus);
         $('#createdAt').html(new Date(data.createdAt).toLocaleString());
         $('#updatedAt').html(new Date(data.updatedAt).toLocaleString());
     })

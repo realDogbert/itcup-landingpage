@@ -20,7 +20,7 @@ $(document).ready(function() {
         _user.email = $('#email').val();
         _user.golfclub = $('#golfclub').val();
         _user.userStatus = $('#userStatus').val();
-        _user.handicap = Number($('#handicap').val());
+        _user.handicap = Number($('#handicap').val().replace(/,/, '.'));
         _user.updatedAt = new Date().getTime();
         if (!_user.createdAt) {
             _user.createdAt = new Date().getTime();
@@ -93,6 +93,8 @@ function showError(errorMessage) {
 }
 
 function verifyUser() {
+
+    console.log(_user);
 
     var valid = true;
     if (_user.golfclub.trim().length < 3) {

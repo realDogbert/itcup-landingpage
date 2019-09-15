@@ -21,7 +21,7 @@ $(document).ready(function() {
             lastName: $('#lastname').val(),
             email: $('#email').val(),
             golfclub: $('#golfclub').val(),
-            handicap: Number($('#handicap').val()),
+            handicap: Number($('#handicap').val().replace(/,/, '.')),
             agreement: $('#agreement').is(':checked')
         }
 
