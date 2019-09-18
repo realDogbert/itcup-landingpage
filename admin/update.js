@@ -32,6 +32,10 @@ $(document).ready(function() {
         
     });
 
+    $('#deleteUser').click(function(){
+        deleteUser(_user);
+    });
+
 })
 
 function getUserData(id) {
@@ -57,6 +61,7 @@ function getUserData(id) {
     })
     .fail(function(error) {
         console.log(error);
+        showError('Daten konnten nicht geladen werden.');
     });
 
 }
@@ -71,7 +76,7 @@ function updateUser(user) {
         contentType: 'application/json'
     })
     .done(function(data) {
-        updateSuccess();
+        showSuccess('Danke. Deine Daten wurden erfogreich geändert.');
     })
     .fail(function(error) {
         console.log(error);
@@ -79,10 +84,27 @@ function updateUser(user) {
     });
 }
 
-function updateSuccess() {
+
+function deleteUser(user) {
+
+    $.ajax({
+        method: 'DELETE',
+        url: endpoint + user.id
+    })
+    .done(function(data) {
+        showSuccess('Die Daten wurden erfolgreich gelöscht.');
+    })
+    .fail(function(error) {
+        console.log(error);
+        showError('Daten konnten nicht gelöscht werden.');
+    });
+}
+
+
+function showSuccess(successMessage) {
     $('#response')
         .addClass('alert alert-success')
-        .text('Danke. Deine Daten wurden erfogreich geändert.');
+        .text(successMessage);
 }
 
 function showError(errorMessage) {
