@@ -34,4 +34,5 @@ artifacts:
     - style.css
     - bmwitcup.js
     - bmwitcup_UpdateUser.js
+    - 20190921/*
     - img/*

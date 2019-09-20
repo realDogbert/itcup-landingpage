@@ -48,7 +48,7 @@ function createUserLine(idx, user) {
     line.append($("<td>").html(idx)); 
     line.append($("<td>").html(user.firstName)); 
     line.append($("<td>").html(user.lastName));
-    // line.append($("<td>").html(user.email));
+    line.append($("<td>").html(user.email));
     // line.append($("<td>").html(user.userStatus));
     line.append($("<td>").html(user.golfclub));
     line.append($("<td>").html(user.handicap));
