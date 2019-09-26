@@ -117,6 +117,18 @@ html, body {
 	padding: 0;
 }
 
+.picture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    justify-items: center;
+    grid-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.grid-box img {
+    width: 100%;
+}
+
 
 @media (max-width: 768px) {
 	
