@@ -1,7 +1,10 @@
 ﻿html, body {
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
+
 
 p {
 	font-size: 1.2em;
@@ -11,6 +14,7 @@ p {
 label {
 	font-size: 1.5em;
 }
+
 strong {
 	color: black;
 }
@@ -50,6 +54,25 @@ strong {
 
 .landing-text .actions {
 	margin-top: 25px;
+}
+
+.header {
+	text-align: left;
+	vertical-align: top;
+
+	padding-top: 130px;
+}
+
+.header h1 {
+	font-size: 5em;
+	margin-bottom: 0;
+	color: #CCD3D9;
+}
+
+.header h3 {
+	margin-top: 0;
+	color: gray;
+	font-size: 3em;	
 }
 
 .padding {
@@ -110,23 +133,20 @@ footer {
 	height: 400px;
 }
 
-/* Optional: Makes the sample page fill the window. */
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
 
 .picture-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     justify-items: center;
     grid-gap: 5px;
-    grid-row-gap: 5px;
+	grid-row-gap: 5px;
+	
+	padding-top: 130px;
 }
 
 .grid-box img {
-    width: 100%;
+	width: 100%;
+	border-color: white;
 }
 
 
@@ -146,72 +166,3 @@ html, body {
 	}
 
 }
-
-/*--- iOS Landing Page Fix
-section {
- 	position: relative;
- 	width: 100%;
- 	height: 100%;
- 	display: table;
-}
-.home-wrap {
- 	clip: rect(0, auto, auto, 0);
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
- 	height: 100%;
-}
-#home {
-	background-image: url('img/mountains.jpeg');
- 	position: fixed;
- 	display: table;
- 	top: 0;
- 	left: 0;
- 	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	-webkit-transform: translateZ(0);
-          transform: translateZ(0);
-	will-change: transform;
-	z-index: -1;
-}
-.landing-text {
-	z-index: 100;
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-}
---*/
-
-/*--- iOS Fixed Image Fix
-figure {
-	position: relative;
-	width: 100%;
-	height: 60%;
-}
-.fixed-wrap {
-	clip: rect(0, auto, auto, 0);
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-#fixed {
-	background-image: url('img/background.jpg');
-	position: fixed;
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-position: center center;
-	-webkit-transform: translateZ(0);
-          transform: translateZ(0);
-	will-change: transform;
-}
---*/
-
