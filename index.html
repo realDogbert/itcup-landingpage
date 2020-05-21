@@ -1,209 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>BMW Mitarbeiter IT-Cup</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- <link rel="stylesheet" href="./local/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-  <script src="./local/jquery-3.4.1.min.js"></script>
-  <script src="./local/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-  <script src="bmwitcup.js"></script>
-  <link href="style.css" rel="stylesheet" />
-</head>
+    <title>IT-Cup</title>
+  </head>
 
-<body>
+  <body>
 
-  <div id="home">
-    <div class="landing-text">
+    <div class="header">
 
-      <h1>20. BMW Mitarbeiter IT-Cup</h1>
-      <h3>21.09.2019 Golfplatz Ebersberg</h3>
+      <div class="container">
+        <nav class="navbar navbar-expand-sm">
+          <img class="navbar-brand" src="./img/BMW_White_Logo.svg">
 
-      <div class="actions">
-          <a href="#anmeldung" role="button" class="btn btn-primary btn-lg">Anmeldung</a>
-          <a href="#info" role="button" class="btn btn-success btn-lg">Informationen</a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav ">
+              <a class="nav-item btn btn-outline-secondary" href="impressum.html">Impressum</a>
+              <a class="nav-item btn btn-success" href="#">Anmelden</a>
+            </div>
+          </div>
+        </nav>
+
+        <h1 class="display-2 text-center">BMW Mitarbeiter IT-Cup</h1>
       </div>
 
     </div>
-  </div>
 
-  <div class="padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <img src="img/birdie.png" alt="" class="icon">
+    <div class="container content">
+
+      <h1>Anmeldung</h1>
+      <p>Ich möchte mich für die Mailingliste des BMW Mitarbeiter IT-Cup anmelden.</p>
+
+      <form id="registration" action="" method="post" enctype="application/x-www-form-urlencoded">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="firstname">Vorname</label>
+              <input type="text" name="firstname" class="form-control form-input" id="firstname" placeholder="Vorname">
+            </div>
+          </div>
+          <div class="col-md-8">
+        
+            <div class="form-group">
+              <label for="lastname">Nachname</label>
+              <input type="text" name="lastname" class="form-control form-input" id="lastname" placeholder="Nachname">
+            </div>
+          </div>
         </div>
-        <div class="col-sm-8">
 
-            <a name="anmeldung"></a>
 
-            <h2>Anmeldung</h2>
+          <div class="form-group">
+            <label for="email">BMW Email-Adresse*</label>
+            <input type="email" name="email" class="form-control form-input" id="email" aria-describedby="emailHelp" placeholder="Max.Muster@bmw.de oder Max.Muster@partner.bmw.de">
+            <small id="emailHelp" class="form-text text-muted">*Bitte nur eine gültige BMW oder BMW Partner Email-Adresse angeben.</small>
+          </div>
 
-            <p>
-              Hiermit melde ich mich zur Teilnahme am 20. BMW IT-Cup an.<br>
-              Den Unkostenbeitrag von 75,- € (inkl. Turnierbeitrag, Halfway und Preise) überweise ich bis zum 20.09.2019 auf das in der 
-              Anmeldebestätigung angegebene Konto. 
-            </p>
-
-            
-            <form id="registration" action="" method="post" enctype="application/x-www-form-urlencoded">
-
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="firstname">Vorname</label>
-                    <input type="text" name="firstname" class="form-control form-input" id="firstname" placeholder="Vorname">
-                  </div>
-                </div>
-                <div class="col-md-8">
-              
-                  <div class="form-group">
-                    <label for="lastname">Nachname</label>
-                    <input type="text" name="lastname" class="form-control form-input" id="lastname" placeholder="Nachname">
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label for="golfclub">Golfclub</label>
+                <input type="text" name="golfclub" class="form-control form-input" id="golfclub" placeholder="Name des Golfclubs">
               </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="handicap">Handicap</label>
+                <input type="text" name="handicap" class="form-control form-input" id="handicap"
+                  placeholder="Aktuelles Handicap">
+              </div>
+            </div>
+          </div>
 
+          
 
-                <div class="form-group">
-                  <label for="email">BMW Email-Adresse*</label>
-                  <input type="email" name="email" class="form-control form-input" id="email" aria-describedby="emailHelp" placeholder="Max.Muster@bmw.de oder Max.Muster@partner.bmw.de">
-                  <small id="emailHelp" class="form-text text-muted">*Bitte nur eine gültige BMW oder BMW Partner Email-Adresse angeben.</small>
-                </div>
+          <div class="form-group form-check">
+            <p>
+            <input type="checkbox" name="agreement" class="form-check-input form-input" id="agreement">
+            Ich erkläre mich damit einverstanden, dass meine Daten ausschließlich zur Organisation und Durchführung des BMW IT-Cup in elektronischer Form gespeichert und verarbeitet werden.
+          </p>
+          </div>
+          <button id="submitRegistration" type="submit" class="btn btn-primary">
+            Anmeldung abschicken
+          </button>
+        </form>
 
-                <div class="row">
-                  <div class="col-md-8">
-                    <div class="form-group">
-                      <label for="golfclub">Golfclub</label>
-                      <input type="text" name="golfclub" class="form-control form-input" id="golfclub" placeholder="Name des Golfclubs">
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label for="handicap">Handicap</label>
-                      <input type="text" name="handicap" class="form-control form-input" id="handicap"
-                        placeholder="Aktuelles Handicap">
-                    </div>
-                  </div>
-                </div>
-
-                
-
-                <div class="form-group form-check">
-                  <p>
-                  <input type="checkbox" name="agreement" class="form-check-input form-input" id="agreement">
-                  Ich erkläre mich damit einverstanden, dass meine Daten ausschließlich zur Organisation und Durchführung des BMW IT-Cup in elektronischer Form gespeichert und verarbeitet werden.
-                </p>
-                </div>
-                <button id="submitRegistration" type="submit" class="btn btn-primary">
-                  Anmeldung abschicken
-                </button>
-              </form>
-
-              <div id="response"></div>
-
-        </div>
-      </div>
     </div>
-  </div>
 
-
-  <a name="info"></a>
-
-  <div class="padding">
-    <div class="container">
+    <footer class="page-footer">
+      <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-          <h2>Turnier Informationen</h2>
-
-          <p>
-            <strong>Start: </strong><br>21.09.2019, 10:00<br>
-            <strong>Spielmodus: </strong><br>Einzel, Stableford, vorgabewirksam<br>
-            <strong>Abschlag: </strong><br>Herren (gelb) und Damen (rot)<br>
-          </p>
-          <p>
-            <strong>Startgebühr: </strong><br>70€ (Greenfee, Turnierbeitrag und Halfway)<br>
-            <strong>Sonstige Kosten: </strong><br>Preise = 5 €<br>
-          </p>
-
+        <div class="col">
+          <h3>Kontakt</h3>
+        
+          <div>
+              Frank von Eitzen<br>
+              EMail: Frank.von-Eitzen@bmw.de <br>
+              Tel.: +49 151 60152978
+          </div>
         </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-          <img src="./img/golf-bag.png" alt="Sass" class="icon img-responsive">
+        <div class="col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="impressum.html">Impressum</a> BMW Mitarbeiter IT-Cup</li>
+            <li><a href="https://bmw.de">Homepage BMW Deutschland</a></li>
+          </ul>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-          <h2>Austragungsort</h2>
-
-          <p>
-            <strong>
-              <a href="https://www.gc-ebersberg.de/">Golf-Club Ebersberg e.V.</a><br> 
-            </strong>
-            <a href="https://www.gc-ebersberg.de/18-loch-platz/allgemeines">18-Loch Meisterschaftsplatz</a>
-          </p>
-
-          <p>
-              Zaißing 6
-              <br>85643 Steinhöring
-          </p>
-          
-          <a href="https://www.gc-ebersberg.de/anfahrt" role="button" class="btn btn-success">Anfahrt</a>     
-          
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-            <img src="./img/logo_ebersberg.jpg" class="icon img-responsive">
-            
+        <div class="col">
+          <h3>Credits</h3>
+          <div class="credits">
+            Photo by 
+            <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@will0629?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Will Porada"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Will Porada</span></a>
+            on <a href="https://www.unsplash.com">Unsplash</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div id="fixed"></div>
+    </footer>
 
 
-  <footer class="container-fluid text-left">
-    <div class="row">
-      <div class="col-sm-4">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+  </body>
 
-        <h3>Kontakt</h3>
-        
-        <div>
-            Frank von Eitzen<br>
-            EMail: Frank.von-Eitzen@bmw.de <br>
-            Tel.: +49 151 60152978
-        </div>
-        
-      
-      </div>
-      <div class="col-sm-4">
-        
-      </div>
-      <div class="col-sm-4">
-
-        <h3>Credits</h3>
-
-        <div class="credits">
-          Icons made by 
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and 
-          <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
-          from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>,
-          licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-        </div>  
-
-        <div class="credits">
-          Photo by 
-          <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@will0629?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Will Porada"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Will Porada</span></a>
-          on <a href="https://www.unsplash.com">Unsplash</a>
-        </div>
-        
-      </div>
-  </div>
-  </footer>
-
-
-</body>
 </html>
