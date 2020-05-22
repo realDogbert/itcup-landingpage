@@ -29,11 +29,9 @@ phases:
 artifacts:
   files:
     - index.html
-    - updateUser.html
+    - impressum.html
     - favicon.ico
     - style.css
-    - bmwitcup.js
-    - bmwitcup_UpdateUser.js
     - 20190921/*
     - 20190921/img/*
     - img/*
