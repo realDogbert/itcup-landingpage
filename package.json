@@ -18,7 +18,7 @@
   "homepage": "https://github.com/realDogbert/itcup-landingpage#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "grunt": "^1.0.4",
+    "grunt": "^1.1.0",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.1.0"
   }
