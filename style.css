@@ -55,6 +55,16 @@ footer {
 	color: #CCD3D9;
 }
 
+.section {
+	font-size: 2em;
+	padding-bottom: 20px;
+}
+
+.email, .phone {
+	font-size: 1em;
+	vertical-align: middle;
+}
+
 .impressum {
 	background-color: white;
 	padding: 20px;
