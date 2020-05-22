@@ -23,6 +23,13 @@ body .header {
 .header h1 {
 	color: white;
 	padding-top: 100px;
+	font-size: 5em;
+	margin-bottom: 0;
+}
+
+.header h3 {
+	color: gray;
+	font-size: 3em;
 }
 
 label {
