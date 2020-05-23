@@ -1,3 +1,4 @@
+const endpoint = ' https://mwve9u6of7.execute-api.eu-central-1.amazonaws.com/prod';
 var _user = null;
 
 $(document).ready(function(){
@@ -33,9 +34,7 @@ $(document).ready(function(){
             agreement: $('#agreement').is(':checked')
         };
         if (verifyNewsletterForm()) {
-            form.hide();
-            $('#registrationRequest').hide();
-            $('#registrationSuccess').show();
+            registerUser();
         };
 
     });
@@ -51,6 +50,31 @@ function verifyNewsletterForm() {
         && _user.agreement;
         
     return valid;
+
+}
+
+function registerUser() {
+
+    var url = endpoint + '/user';
+
+    $.ajax({
+        headers: {
+            "X-API-KEY": "Pl4RPMiY0z8zajGRwVtOy31usOsf0fez8AEtI01x"
+        },
+        method: 'POST',
+        url: url,
+        data: JSON.stringify(_user),
+        contentType: 'application/json'
+    })
+    .done(function(data) {
+        $('#registrationRequest').hide();
+        $('#registrationSuccess').show();
+    })
+    .fail(function(error) {
+        console.log(error);
+        $('#registrationRequest').hide();
+        $('#registrationSuccess').show();
+    });
 
 }
  
