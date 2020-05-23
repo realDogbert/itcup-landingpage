@@ -40,74 +40,125 @@
 
 
 	<div class="container content" id="newsletter">
-
+	
 		<div class="nav_back"><a href="#top"><i class="material-icons md-48">keyboard_arrow_up</i></a></div>
-		
-		<h1>Anmeldung Newsletter</h1>
-		<p>Ich möchte mich für den Newsletter des BMW Mitarbeiter IT-Cup anmelden und über den nächsten Termin zum BMW
-			Mitarbeiter IT-Cup informiert werden.</p>
-
-		<form id="registration" action="" method="post" enctype="application/x-www-form-urlencoded">
-
-			<div class="row">
-				<div class="col-md-4">
-					<div class="form-group">
-						<label for="firstname">Vorname</label>
-						<input type="text" name="firstname" class="form-control form-input" id="firstname"
-							placeholder="Vorname">
-					</div>
-				</div>
-				<div class="col-md-8">
-
-					<div class="form-group">
-						<label for="lastname">Nachname</label>
-						<input type="text" name="lastname" class="form-control form-input" id="lastname"
-							placeholder="Nachname">
-					</div>
-				</div>
+	
+	
+		<div class="card" id="registrationRequest">
+	
+			<div class="card-header">
+				<h1>Anmeldung Newsletter</h1>
+				<p class="card-text">Ich möchte mich für den Newsletter des BMW Mitarbeiter IT-Cup anmelden und über den
+					nächsten Termin zum BMW
+					Mitarbeiter IT-Cup informiert werden.</p>
+	
 			</div>
-
-
-			<div class="form-group">
-				<label for="email">BMW Email-Adresse*</label>
-				<input type="email" name="email" class="form-control form-input" id="email" aria-describedby="emailHelp"
-					placeholder="Max.Muster@bmw.de oder Max.Muster@partner.bmw.de">
-				<small id="emailHelp" class="form-text text-muted">*Bitte nur eine gültige BMW oder BMW Partner
-					Email-Adresse angeben.</small>
-			</div>
-
-			<div class="row">
-				<div class="col-md-8">
-					<div class="form-group">
-						<label for="golfclub">Golfclub</label>
-						<input type="text" name="golfclub" class="form-control form-input" id="golfclub"
-							placeholder="Name des Golfclubs">
+	
+			<div class="card-body">
+	
+				<form id="registration" class="needs-validation" action="" method="post"
+					enctype="application/x-www-form-urlencoded" novalidate>
+	
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="firstname">Vorname</label>
+								<input type="text" name="firstname" class="form-control form-input" id="firstname"
+									placeholder="Vorname" required>
+								<div class="invalid-feedback">Bitte Vornamen eingeben.</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+	
+							<div class="form-group">
+								<label for="lastname">Nachname</label>
+								<input type="text" name="lastname" class="form-control form-input" id="lastname"
+									placeholder="Nachname" required>
+								<div class="invalid-feedback">Bitte Nachname eingeben.</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
+	
 					<div class="form-group">
-						<label for="handicap">Handicap</label>
-						<input type="text" name="handicap" class="form-control form-input" id="handicap"
-							placeholder="Aktuelles Handicap">
+						<label for="email">BMW Email-Adresse*</label>
+						<input type="email" name="email" class="form-control form-input" id="email"
+							aria-describedby="emailHelp" placeholder="Max.Muster@bmw.de oder Max.Muster@partner.bmw.de"
+							required>
+						<small id="emailHelp" class="form-text text-muted">*Bitte nur eine gültige BMW oder BMW Partner
+							Email-Adresse angeben.</small>
+						<div class="invalid-feedback">Bitte gültige Email Adresse eingeben.</div>
 					</div>
-				</div>
+	
+					<!-- <div class="row">
+					<div class="col-md-8">
+						<div class="form-group">
+							<label for="golfclub">Golfclub</label>
+							<input type="text" name="golfclub" class="form-control form-input" id="golfclub"
+								placeholder="Name des Golfclubs">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<label for="handicap">Handicap</label>
+							<input type="text" name="handicap" class="form-control form-input" id="handicap"
+								placeholder="Aktuelles Handicap">
+						</div>
+					</div>
+					</div> -->
+	
+					<div class="form-group">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" name="agreement" value="" id="agreement"
+								required>
+							<label class="form-check-label" for="agreement">
+								Ich erkläre mich damit einverstanden, dass meine Daten ausschließlich zur Organisation und
+								Durchführung des BMW Mitarbeiter IT-Cup in elektronischer Form gespeichert und verarbeitet
+								werden.
+							</label>
+							<div class="invalid-feedback">
+								Bitte der Erklärung zustimmen.
+							</div>
+						</div>
+					</div>
+	
+					<div class="form-group">
+						<button id="submitRegistration" type="submit" class="btn btn-primary">
+							Anmeldung abschicken
+						</button>
+					</div>
+
+				</form>
+
 			</div>
+		</div>
 
 
 
-			<div class="form-group form-check">
+		<div class="card" id="registrationSuccess">
+			<div class="card-header">
+				<h1 class="md-align">
+					<i class="material-icons md-48">email</i>
+					&nbsp;Anmeldung erfolgreich
+				</h1>
+			</div>
+			<div class="card-body">
+				
 				<p>
-					<input type="checkbox" name="agreement" class="form-check-input form-input" id="agreement">
-					Ich erkläre mich damit einverstanden, dass meine Daten ausschließlich zur Organisation und
-					Durchführung des BMW Mitarbeiter IT-Cup in elektronischer Form gespeichert und verarbeitet werden.
+					Sie haben sich erfolgreich für den BMW Mitarbeiter IT-Cup Newsletter angemeldet. 
+					Ab sofort herhalten Sie per Email den Termin und Austragungsort des kommenden BMW Mitarbeiter IT-Cups, 
+					sowie weitere interessante Informationen.
 				</p>
+				<p>
+					Um den Newsletter wieder abzubestellen senden sie bitte eine Email mit dem Titel "unsubscribe" an die Adresse ...
+				</p>
+	
 			</div>
-			<button id="submitRegistration" type="submit" class="btn btn-primary">
-				Anmeldung abschicken
-			</button>
-		</form>
-
+		</div>
+	
 	</div>
+
+
+
 
 
 	<footer class="page-footer" id="footer">
@@ -120,12 +171,11 @@
 
 						<div class="section">Kontakt</div>
 
-						<div class="name">Frank von Eitzen</div>
-						<div class="email">
-							<i class="material-icons">email</i> Frank.von-Eitzen@bmw.de <br>
+						<div class="email md-align">
+							<i class="material-icons">email</i> &nbsp; Frank.von-Eitzen@bmw.de <br>
 						</div>
-						<div class="phone">
-							<i class="material-icons md-18">call</i> +49 151 60152978
+						<div class="phone md-align">
+							<i class="material-icons">call</i> &nbsp; +49 151 60152978
 						</div>
 						
 					</div>
