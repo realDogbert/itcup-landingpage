@@ -79,3 +79,17 @@ footer {
 	display: inline-flex;
     vertical-align: middle;
 }
+
+
+.unsplash {
+	background-color:black;
+	color:white;
+	text-decoration:none;
+	padding:4px 6px;
+	font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	line-height:1.2;
+	display:inline-block;
+	border-radius:3px;
+}
